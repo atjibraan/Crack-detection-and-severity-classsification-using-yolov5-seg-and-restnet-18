@@ -1,0 +1,5 @@
+names:
+- crack
+nc: 1
+train: crack-2/train/images
+val: crack-2/valid/images
