@@ -2,7 +2,7 @@
 
 ![Crack Detection](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Crack_in_pavement.jpg/640px-Crack_in_pavement.jpg)
 
-Access the Gradio ap through https://huggingface.co/spaces/AJibraan/Crack
+Access the Gradio app through https://huggingface.co/spaces/AJibraan/Crack
 
 This project presents an end-to-end deep learning solution to automatically detect and classify cracks on concrete or pavement surfaces. We use **YOLOv5** for crack detection and **ResNet18** for severity classification. The dataset is accessed directly from **Roboflow** using their API.
 
@@ -34,5 +34,6 @@ from roboflow import Roboflow
 rf = Roboflow(api_key="YOUR_API_KEY")
 project = rf.workspace("your-workspace").project("your-project-name")
 dataset = project.version("1").download("yolov5")
+
 
 
